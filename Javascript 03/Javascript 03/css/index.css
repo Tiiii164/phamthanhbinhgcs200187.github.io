@@ -1,0 +1,22 @@
+.product-list {
+}
+
+.product {
+}
+
+.product:hover {
+  background-color: rgba(253, 188, 191, 0.8);
+  cursor: pointer;
+}
+
+.product-img img {
+  width: 100%;
+}
+
+.product-name {
+  font-weight: bold;
+  color: green;
+}
+
+.product-price {
+}

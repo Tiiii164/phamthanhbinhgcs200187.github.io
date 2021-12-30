@@ -1,0 +1,344 @@
+/* default setup */
+/* -------------- */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 20px;
+  color: #5a5a5a;
+  background-color: white;
+  text-rendering: optimizeLegibility;
+  /* scroll-behavior: smooth; */
+}
+body {
+  overflow-x: hidden;
+}
+/* =================== */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+/* ----------- */
+/* .logo {
+  width: 10%;
+  margin-left: 150px;
+  margin-top: 40px;
+  float: left;
+} */
+.logo {
+  width: 10%;
+  margin-left: 200px;
+  margin-top: 40px;
+  float: left;
+}
+/* ----------------------- */
+/* header */
+header {
+  background-image: linear-gradient(
+      45deg,
+      rgba(247, 129, 149, 0.5) 55%,
+      rgba(253, 188, 191, 0.8)
+    ),
+    url(/Caynhadau/resources/image/background4.jpeg);
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  /* vh : viewheight: căn dựa trên cái màn hình luôn nên dùng cho các cái bự ở ngoài  */
+}
+#search-bar {
+  width: 575px;
+  margin-top: 110px;
+  margin-left: 170px;
+  margin-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 3px solid rgb(255, 176, 189);
+  border-radius: 15px;
+  padding-left: 15px;
+  outline-style: none;
+  font-size: 110%;
+}
+#search-icon {
+  position: absolute;
+  margin-top: 125px;
+  margin-left: -70px;
+  color: rgb(255, 176, 189);
+  font-size: 110%;
+}
+#login {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+#register {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.main-nav a:last-child {
+  color: rgb(255, 255, 255);
+  font-size: 120%;
+}
+.main-nav2 {
+  margin-top: 80px;
+  margin-left: 200px;
+  font-size: 240%;
+  line-height: 130%;
+}
+.fa-heart {
+  transition: 0.7s;
+}
+.fa-heart:hover,
+.fa-heart:active {
+  color: rgb(245, 91, 117);
+}
+.fa-star {
+  transition: 0.7s;
+}
+.fa-star:hover,
+.fa-star:active {
+  color: rgb(238, 238, 121);
+}
+.fa-gift {
+  transition: 0.7s;
+}
+.fa-gift:hover,
+.fa-gift:active {
+  color: rgb(255, 255, 255);
+}
+/* --- */
+.btn {
+  text-decoration: none;
+  color: rgb(87, 63, 63);
+  font-weight: 700;
+  margin-left: 70px;
+  background-color: rgb(248, 108, 132);
+  padding: 15px 30px;
+  border-radius: 5px;
+  /* bo tròn */
+  margin: 0 5px;
+  /* khoảng cách trên dưới và ngang */
+  display: inline-block;
+  /* vừa dùng thuộc tính của line vừa dùng của block */
+  width: 190px;
+  /* chiều rộng của cái ô button */
+  text-align: center;
+  /* căn chữ ở giữa */
+  transition: all 0.7s;
+}
+.btn:hover,
+.btn:active {
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+}
+.main-nav3 {
+  text-align: center;
+  position: relative;
+  margin-top: 100px;
+}
+
+/* ------Treding--------- */
+.trending-section {
+  margin-left: 190px;
+}
+
+h1 {
+  color: rgb(87, 63, 63);
+  font-size: 180%;
+  font-weight: 700;
+  text-align: center;
+  /* căn giữa */
+  margin-bottom: 70px;
+  margin-top: 70px;
+  margin-left: -190px;
+  position: relative;
+}
+h1::after {
+  content: " ";
+  display: block;
+  height: 3px;
+  width: 150px;
+  background-color: rgb(245, 91, 117);
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.trending-section-card {
+  width: 255px;
+  float: left;
+  margin-left: 30px;
+}
+.product-thumb {
+  width: 255px;
+  transition: 0.5s;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.product-thumb:hover,
+.product-thumb:active {
+  border-radius: 0;
+  box-shadow: 0px 3px 10px 5px #772648;
+  border: 4px solid rgba(152, 178, 202, 0.5);
+  /* x, y, độ mở, độ phóng rộng, màu */
+}
+h2 {
+  font-size: 20px;
+  color: black;
+}
+h2:hover,
+h2:active {
+  color: rgb(245, 91, 117);
+}
+.product-price {
+  position: relative;
+  font-weight: 700;
+}
+.product-info h2 {
+  min-height: 40px;
+}
+.product-info {
+  margin-bottom: 20px;
+}
+.pre-price {
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+
+/* ------------------------ */ /* ------------------------ */
+/* -----------------Collections-section---------------- */
+/* ------------------------ */ /* ------------------------ */
+.collections-section-card {
+  width: 356px;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 100px;
+}
+
+.collections-thumb {
+  width: 356px;
+  height: 237px;
+  transition: 0.5s;
+}
+.collections-section-card:hover .collections-thumb,
+.collections-section-card:active .collections-thumb {
+  filter: brightness(120%) blur(5px);
+  opacity: 0.7;
+}
+.picture-title {
+  font-size: 150%;
+  font-weight: 500;
+  position: relative;
+  top: -130px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  opacity: 0;
+  transition: 0.7s;
+}
+.collections-section-card:hover .picture-title,
+.collections-section-card:active .picture-title {
+  opacity: 1;
+  font-size: 120%;
+}
+
+.contact-section {
+  background-image: linear-gradient(
+      45deg,
+      rgba(247, 129, 149, 0.5) 55%,
+      rgba(253, 188, 191, 0.8)
+    ),
+    url(/Caynhadau/resources/BG2.jpg);
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 50vh;
+}
+.whiteline:after {
+  content: " ";
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+.small-icon {
+  color: rgb(255, 255, 255);
+  /* font-size: 150%; */
+  margin-right: 10px;
+  transition: 0.5s;
+}
+.small-icon:hover,
+.small-icon:active {
+  transform: scale(1.3);
+}
+.small-icon1 {
+  color: white;
+  font-size: 150%;
+  /* position: absolute; */
+  margin-left: -30%;
+  margin-top: -0%;
+  margin-bottom: 10px;
+  transition: 0.5s;
+  width: 22px;
+}
+.small-icon1:hover,
+.small-icon1:active {
+  transform: scale(1.3);
+}
+.contact-section-1 {
+  font-size: 150%;
+  position: absolute;
+  margin-left: 50%;
+  line-height: 20%;
+}
+.contact-section-2 {
+  margin-top: -27%;
+  margin-left: -5%;
+}
+.line {
+  margin-bottom: 20px;
+  color: black;
+}
+.conect {
+  font-size: 250%;
+  font-weight: 700;
+  color: white;
+  margin-left: 42%;
+  margin-bottom: 70px;
+}
+/* ---------Footer-------- */
+footer {
+  text-align: center;
+  background-color: rgb(255, 176, 189);
+  color: white;
+  padding: 20px;
+  font-size: 100%;
+  font-weight: bold;
+}
+.pink {
+  background-color: rgba(253, 188, 191, 0.8);
+  position: relative;
+  top: -50px;
+  width: 150px;
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 0%;
+  transition: 0.5s;
+}
+.fa-map-marker-alt {
+  margin-left: 5px;
+}
+/* .product-thumb div:hover,
+.product-thumb div:active {
+  border-radius: 20px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0%;
+  height: 55px;
+  top: -79px;
+} */
